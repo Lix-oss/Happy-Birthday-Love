@@ -961,7 +961,7 @@ document.addEventListener('click',e=>{
 (function(){
   const ex=['jpg','jpeg','png','webp']; let k=0; const im=new Image();
   im.onload=()=>document.documentElement.style.setProperty('--scrollimg','url("scroll.'+ex[k]+'")');
-  im.onerror=()=>{ k++; if(k<ex.length) im.src='assets/scroll.'+ex[k]; };
+  im.onerror=()=>{ k++; if(k<ex.length) im.src='scroll.'+ex[k]; };
   im.src='scroll.'+ex[0];
 })();
 </script>
